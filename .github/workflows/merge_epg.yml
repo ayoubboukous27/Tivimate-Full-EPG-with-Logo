@@ -27,7 +27,7 @@ jobs:
       run: python merge_epg_with_logos.py
 
     - name: Upload merged EPG
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: epg_with_logos
         path: epg_with_logos.xml
