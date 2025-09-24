@@ -24,6 +24,7 @@ jobs:
         pip install requests
 
     - name: Run merge script
+      working-directory: ${{ github.workspace }}
       run: python merge_epg_with_logos.py
 
     - name: Upload merged EPG
